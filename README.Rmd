@@ -1,5 +1,5 @@
 ---
-title: "easyeda"
+title: "edaAddins"
 author: '`r rmdtemplates::get_user_name()`'
 date: '`r Sys.Date()`'
 output:
@@ -15,10 +15,25 @@ options(digits = 4)
 suppressPackageStartupMessages(library(xtable)); suppressPackageStartupMessages(library(magrittr));
 ```
 
-easyeda is a R package with functions and RStudio addins for exploratory data analysis. 
+edaAddins is a R package with functions and RStudio addins for exploratory data analysis. 
+
+# Installation
+
+edaAddins is currently only available on GitHub. Install the package in your project with `devtools`. edaAddins also requires the latest version of RStudio. If you do not see an "Addins" dropdown menu in your versio of RStudio, the version that you have is incompatible with edaAddins.
 
 ```{r, eval = FALSE}
-easyeda::exploreDataFrameAddin()
+# install.packages('rstudioapi')
+devtools::install_github("taylo5jm/edaAddins")
+library(edaAddins)
+```
+
+# Usage
+
+Most objects in this package are registered RStudio addins. After loading `edaAddins`, you should see new Addins in the RStudio toolbar. The output of selected addins are displayed below. Addins >> Browse addins... in RStudio is a good way to look at some addins available.
+
+
+```{r, eval = FALSE}
+edaAddins::exploreDataFrameAddin()
 ```
 
 ```{r, eval = FALSE}
