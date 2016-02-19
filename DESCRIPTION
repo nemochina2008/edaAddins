@@ -5,8 +5,10 @@ Version: 0.2.1
 Authors@R: person("Justin", "Taylor", email = "taylo5jm@dukes.jmu.edu",
             role = c("aut", "cre"))
 Description: easyeda has functions and RStudio addins for exploratory
-             data analysis in R
-License: MIT
+             data analysis in R. Some tools include printing information
+             about data frames, downloading and exploring GEO data,
+             and defining new functions.
+License: MIT + file LICENSE
 LazyData: TRUE
 Imports:
     rstudioapi

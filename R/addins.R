@@ -203,5 +203,25 @@ fn <- function(x)
   rstudioapi::insertText(statement)
 }
 
+#' Apply new function to an object
+#' @export splitAndApplyAddin
+
+splitAndApplyAddin <- function()
+{
+  functionTemplateAddin()
+  rstudioapi::insertText("\n")
+  rstudioapi::insertText("out <- parallel::mclapply(x, fn)\n")
+  rstudioapi::insertText("#Map(fn, x)\n")
+  rstudioapi::insertText("#apply(x, 1, fn)\n")
+}
+
+#' Write a matrix to csv
+#' @export writeMatrixAddin
+#'
+
+writeMatrixAddin <- function()
+{
+  rstudioapi::insertText("MASS::write.matrix(mat, filename = 'mat.csv', sep = ',')")
+}
 
 

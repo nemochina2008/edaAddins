@@ -63,4 +63,14 @@ Description: Insert a template for a new function definition with roxygen2 docum
 Binding: functionTemplateAddin
 Interactive: false
 
+Name: Split and apply
+Description: Insert a template for a new function and code to apply the function
+             over various types of data structures in R
+Binding: splitAndApplyAddin
+Interactive: false
+
+Name: Write matrix to file
+Description: Write a matrix to a comma-separated values (.csv) fo;e
+Binding: writeMatrixAddin
+Interactive: false
 
