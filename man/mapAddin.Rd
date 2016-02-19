@@ -5,11 +5,15 @@
 \title{Insert anonymous function map statement}
 \usage{
 mapAddin()
+
+mapAddin()
 }
 \value{
 Anonymous function map statement
 }
 \description{
 Insert anonymous function map statement
+
+@export mapUnlistAddin
 }
 

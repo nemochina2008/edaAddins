@@ -8,8 +8,59 @@ Description: Inserts a Map() statement with an anonymous function
 Binding: mapAddin
 Interactive: false
 
+Name: Insert anon function map and atomize
+Description: Inserts a Map() statement with an anonymous function
+              and unlists the result
+Binding: mapUnlistAddin
+Interactive: false
+
 Name: Insert code to explore a data frame
 Description: Inserts code to list column names, types, dimensions,
              head, and tail of a data frame
 Binding: exploreDataFrameAddin
 Interactive: false
+
+Name: Insert DT chunk
+Description: Inserts code chunk for the output of a datatable with DT
+Binding: dtAddin
+Interactive: false
+
+Name: Insert xtable chunk
+Description: Inserts code chunk for the output of an xtable in LaTeX
+Binding: xtableAddin
+Interactive: false
+
+Name: Insert question template
+Description: Inserts Markdown and code chunk for answering a statistics
+             question
+Binding: questionTemplateAddin
+Interactive: false
+  varLabels(featureData(ma[[1]]))
+
+Name: Get data entry from GEO
+Description: Inserts statement to get GEO entry using GEOquery. biocLite(GEOquery)
+Binding: getGEOAddin
+Interactive: false
+
+Name: Explore ExpressionSet
+Description: Inserts statement to print information for an ExpressionSet object
+Binding: exploreExpressionSetAddin
+Interactive: false
+
+Name: Get data entry from GEO and explore ExpressionSet
+Description: Inserts statements to download .soft file from GEO and print information
+              for the ExpressionSet object
+Binding: microarrayExpressAddin
+Interactive: false
+
+Name: Summarize and plot histogram of continuous random variable
+Description: Inserts statements to call summary() and hist() on a vector x
+Binding: summarizeCrvAddin
+Interactive: false
+
+Name: New function definition
+Description: Insert a template for a new function definition with roxygen2 documentation
+Binding: functionTemplateAddin
+Interactive: false
+
+

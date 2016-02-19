@@ -1,13 +1,13 @@
 Package: easyeda
 Type: Package
 Title: Functions and Addins for exploratory data analysis in R
-Version: 0.1.0
+Version: 0.2.1
 Authors@R: person("Justin", "Taylor", email = "taylo5jm@dukes.jmu.edu",
             role = c("aut", "cre"))
 Description: easyeda has functions and RStudio addins for exploratory
              data analysis in R
 License: MIT
 LazyData: TRUE
-Suggests:
+Imports:
     rstudioapi
 RoxygenNote: 5.0.1
