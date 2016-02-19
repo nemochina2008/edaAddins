@@ -1,0 +1,15 @@
+Name: Insert foreach loop
+Description: Inserts template for foreach loop at cursor position
+Binding: foreachAddin
+Interactive: false
+
+Name: Insert anonymous function map
+Description: Inserts a Map() statement with an anonymous function
+Binding: mapAddin
+Interactive: false
+
+Name: Insert code to explore a data frame
+Description: Inserts code to list column names, types, dimensions,
+             head, and tail of a data frame
+Binding: exploreDataFrameAddin
+Interactive: false
