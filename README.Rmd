@@ -1,0 +1,59 @@
+---
+title: "easyeda"
+author: '`r rmdtemplates::get_user_name()`'
+date: '`r Sys.Date()`'
+output:
+  html_document:
+    theme: united
+  pdf_document: default
+email: <taylo5jm@dukes.jmu.edu>
+---
+
+```{r, echo = FALSE, eval = FALSE}
+# set global options and load libraries
+options(digits = 4)
+suppressPackageStartupMessages(library(xtable)); suppressPackageStartupMessages(library(magrittr));
+```
+
+easyeda is a R package with functions and RStudio addins for exploratory data analysis. 
+
+```{r, eval = FALSE}
+easyeda::exploreDataFrameAddin()
+```
+
+```{r, eval = FALSE}
+sapply(object, colnames)
+sapply(object, class)
+dim(object)
+head(object)
+tail(object)
+```
+
+```{r, eval = FALSE}
+easyeda::foreachAddin()
+foreach(i = 1:nrow(df)) %do% [i]
+```
+
+```{r, eval = FALSE}
+easyeda::mapAddin()
+Map(function(x) (x), object)
+```
+
+
+
+
+
+
+
+
+
+------------------------------------------  
+
+\newpage  
+
+
+Document last compiled on `r Sys.time()`
+```{r}
+sessionInfo()
+```
+
